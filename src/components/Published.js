@@ -14,7 +14,7 @@ const Published = ({ squestions }) => {
 
                                     <ol>
                                         {value.options.map((value2) => {
-                                            return <li className="text-danger"><h5>{value2}</h5></li>;
+                                            return  <li className="text-danger"> <h5>{value2 }<input type='checkbox' className="ckeckbox"/> </h5></li>;
                                         })}
                                     </ol>
 

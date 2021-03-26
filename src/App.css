@@ -30,3 +30,8 @@
   display: flex;
   justify-content: center;
 }
+
+.ckeckbox{
+  float: right;
+  margin-right: 400px;
+}

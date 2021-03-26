@@ -56,6 +56,12 @@ const CreateSurvey = ({squestions, setSquestions}) => {
         setSquestions(temp);
     }
 
+    const addQuestion = () => {
+        submit();
+        setQtext("");
+        setQtype(0);
+    }
+
     return(
         <> 
             <TypeSelector  qtype={qtype} setQtype={setQtype}/>
@@ -80,7 +86,7 @@ const CreateSurvey = ({squestions, setSquestions}) => {
             <>
                 <div className="subBtn m-4">
                     <Link to="./"><button type="submit" className="btn btn-warning m-1" onClick={submit}>Post</button></Link>
-                    <Link to="./create"><button type="" className="btn btn-warning m-1"onClick={submit}>Add Question</button></Link>
+                    <Link to="./create"><button type="" className="btn btn-warning m-1"onClick={addQuestion}>Add Question</button></Link>
                 </div>
             </>
             :
